@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "bbsFfncTjAo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\шерстяной батат\\Downloads\\zd5_2_panarin_new\\zd4\\zd4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\шерстяной батат\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\шерстяной батат\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\шерстяной батат\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\шерстяной батат\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\шерстяной батат\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

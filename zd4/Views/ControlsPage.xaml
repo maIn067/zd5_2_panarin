@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4.Views.ControlsPage"
+             Title="Элементы">
+    <ScrollView>
+        <StackLayout Padding="20,18" Spacing="14">
+
+            <Frame CornerRadius="6" Padding="12" HasShadow="False" BackgroundColor="#2E7D32">
+                <Label x:Name="SurnameLabel" Text="Пользователь" TextColor="#FFFFFF"
+                       FontAttributes="Bold" HorizontalOptions="Center" />
+            </Frame>
+
+            <Label Text="Командные элементы (Вариант 4)" StyleClass="section-title" FontSize="16" />
+            <Button Text="STATIC"  StyleClass="btn-static"  CornerRadius="22" />
+            <Button Text="HOVER"   StyleClass="btn-hover"   CornerRadius="22" />
+            <Button Text="PRESSED" StyleClass="btn-pressed" CornerRadius="22" />
+
+            <Label Text="DROPDOWN:" StyleClass="section-title" Margin="0,8,0,0" />
+            <Picker x:Name="ItemPicker" Title="Select" StyleClass="green-picker" TextColor="#2E7D32" />
+
+            <StackLayout Orientation="Horizontal" Spacing="16">
+                <Switch IsToggled="True"  OnColor="#2E7D32" />
+                <Switch IsToggled="False" OnColor="#2E7D32" />
+                <Switch IsToggled="True"  OnColor="#2E7D32" />
+            </StackLayout>
+
+            <Label Text="Слайдер:" StyleClass="section-title" Margin="0,8,0,0" />
+            <Slider x:Name="ValueSlider" Minimum="0" Maximum="100" Value="50"
+                    MinimumTrackColor="#2E7D32" ThumbColor="#2E7D32" ValueChanged="OnSliderValueChanged" />
+            <Label x:Name="SliderValueLabel" Text="Значение: 50" />
+
+            <Button Text="Static" StyleClass="btn-static" CornerRadius="8" Margin="0,8,0,0" Clicked="OnStaticClicked" />
+
+            <Frame BorderColor="#A5D6A7" CornerRadius="6" Padding="12" HasShadow="False">
+                <Label x:Name="ResultLabel" StyleClass="result-label"
+                       Text="Выберите значение из списка и нажмите «Static»." />
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

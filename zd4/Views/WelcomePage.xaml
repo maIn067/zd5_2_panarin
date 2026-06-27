@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4.Views.WelcomePage"
+             Title="Welcome"
+             BackgroundColor="#E9ECEF">
+    <Grid Padding="24" VerticalOptions="CenterAndExpand">
+        <Frame StyleClass="welcome-card" CornerRadius="6" HasShadow="True" Padding="0"
+               HorizontalOptions="Center" WidthRequest="320" BackgroundColor="#2B2E35">
+            <StackLayout Spacing="0">
+                <Label Text="Welcome" StyleClass="welcome-title" HorizontalOptions="Center" Margin="0,24,0,20" />
+                <Entry x:Name="UsernameEntry" Placeholder="Username" BackgroundColor="#F4F4F4" Margin="20,0,20,8" />
+                <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" BackgroundColor="#F4F4F4" Margin="20,0,20,20" />
+                <Button x:Name="SignInButton" Text="Sign in" StyleClass="signin-button" CornerRadius="0" Clicked="OnSignInClicked" />
+                <Grid Margin="20,12,20,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0" Orientation="Horizontal" Spacing="6">
+                        <CheckBox Color="#2E7D32" />
+                        <Label Text="Remember me" TextColor="#C9CDD3" VerticalOptions="Center" />
+                    </StackLayout>
+                    <Label Grid.Column="1" Text="I forgot!" TextColor="#C9CDD3" VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

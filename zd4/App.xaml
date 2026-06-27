@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4.App">
+    <Application.Resources>
+        <StyleSheet>
+            <![CDATA[
+.welcome-card { background-color: #2B2E35; }
+.welcome-title { color: #FFFFFF; font-size: large; font-weight: bold; }
+.welcome-entry { background-color: #F4F4F4; color: #333333; }
+.welcome-link { color: #C9CDD3; font-size: small; }
+.signin-button { background-color: #2E7D32; color: #FFFFFF; font-weight: bold; }
+.btn-static { background-color: #2E7D32; color: #FFFFFF; font-weight: bold; }
+.btn-hover { background-color: #43A047; color: #FFFFFF; font-weight: bold; }
+.btn-pressed { background-color: #1B5E20; color: #FFFFFF; font-weight: bold; }
+.green-picker { color: #2E7D32; }
+.surname-badge { background-color: #2E7D32; color: #FFFFFF; font-weight: bold; }
+.section-title { color: #1B5E20; font-weight: bold; }
+.result-label { color: #1B5E20; }
+            ]]>
+        </StyleSheet>
+    </Application.Resources>
+</Application>
